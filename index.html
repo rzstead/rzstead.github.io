@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>steadfast graphics</title>
+
+		<script
+			src="https://kit.fontawesome.com/cde003ee1c.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<!-- jQuery -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+			type="text/javascript"
+		></script>
+
+		<!-- nanogallery2 -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
+		></script>
+	</head>
+	<body>
+		<section class="sidebar">
+			<div class="logo-container"></div>
+			<div class="hero-container">
+				<div class="image"></div>
+			</div>
+			<div class="blurb-container">
+				<div class="text">
+					<p>
+						Lorem ipsum dolor sit amet
+						consectetur adipisicing
+						elit. Aperiam, deserunt
+						minus eius placeat dolores
+						quisquam fugiat illo
+						mollitia odit itaque ipsam
+						vel dolorum ducimus
+						repellendus accusantium a?
+						Modi, pariatur reiciendis.
+					</p>
+					<p>
+						Contact me at
+						ryan@steadfast.graphics
+					</p>
+				</div>
+			</div>
+		</section>
+		<nav class="nav">
+			<a href="/">Renders</a>
+			<a href="/">Photography</a>
+			<a href="/">Coding</a>
+		</nav>
+		<section class="gallery">
+			<!-- ### start of the gallery definition ### -->
+			<div
+				id="ngy2p"
+				data-nanogallery2='{
+				"itemsBaseURL": "http://192.168.2.179:5500/content/images/",
+				"thumbnailWidth": "auto",
+				"thumbnailHeight": "450",
+				"thumbnailBorderVertical": 0,
+				"thumbnailBorderHorizontal": 0,
+				"thumbnailLabel": {
+				  "position": "overImageOnBottom",
+				  "display": false
+				},
+				"thumbnailAlignment": "center",
+				"thumbnailOpenImage": true
+			  }'
+			>
+				<a
+					href="abs.jpg"
+					data-ngthumb="abs.jpg"
+					data-ngdesc=""
+				></a>
+				<a
+					href="coffee.jpg"
+					data-ngthumb="coffee.jpg"
+					data-ngdesc=""
+				></a>
+				<a
+					href="cozy.jpg"
+					data-ngthumb="cozy.jpg"
+					data-ngdesc=""
+				></a>
+				<a
+					href="anim.png"
+					data-ngthumb="anim.png"
+					data-ngdesc=""
+				></a>
+				<a
+					href="apt.jpg"
+					data-ngthumb="apt.jpg"
+					data-ngdesc=""
+				></a>
+				<a
+					href="plant-1.jpg"
+					data-ngthumb="plant-1.jpg"
+					data-ngdesc=""
+				></a>
+				<a
+					href="cozy-2.jpg"
+					data-ngthumb="cozy-2.jpg"
+					data-ngdesc=""
+				></a>
+			</div>
+			<!-- ### end of the gallery definition ### -->
+		</section>
+		<div
+			id="toggle"
+			class="theme-switch"
+		>
+			<i class="fas fa-adjust"></i>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>
