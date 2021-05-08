@@ -18,8 +18,12 @@ function toggleTheme() {
     } else {
         setTheme('light-theme');
     }
+
     document.getElementById("toggle").addEventListener('click', (ev) => {
         toggleTheme();
-        console.log('clicked!');
+    });
+
+    document.getElementById("cta").addEventListener('click', (ev) => {
+        window.scrollBy({top: window.innerHeight, behavior:'smooth'});
     });
 })();

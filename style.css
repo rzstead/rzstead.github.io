@@ -50,6 +50,7 @@ body > * {
 	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 }
 
 .gallery {
@@ -150,6 +151,10 @@ body > * {
 			'sidebar gallery'
 			'sidebar gallery';
 	}
+
+	.cta {
+		display: none;
+	}
 }
 
 /* Mobile */
@@ -160,6 +165,25 @@ body > * {
 		grid-template-areas:
 			'sidebar '
 			'gallery';
+	}
+
+	.cta {
+		display: visible;
+		/* position: absolute; */
+		margin-bottom: 1em;
+	}
+
+	.cta i {
+		color: var(--inverse-primary);
+		font-size: 2.75em;
+		transition-duration: 0.2s;
+	}
+
+	.cta i:hover,
+	i:focus {
+		cursor: pointer;
+		transform: scale(1.25);
+		transition-duration: 0.2s;
 	}
 
 	.logo-container {
